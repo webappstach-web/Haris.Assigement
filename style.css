@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #eee;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 120px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.red {
+  background: red;
+  animation: redFight 3s infinite ease-in-out;
+}
+
+.green {
+  background: green;
+  animation: greenFight 3s infinite ease-in-out;
+}
+
+@keyframes redFight {
+  0%   { left: 0; }
+  50%  { left: 250px; }
+  100% { left: 0; }
+}
+
+@keyframes greenFight {
+  0%   { left: 500px; }
+  50%  { left: 350px; }
+  100% { left: 500px; }
+}
